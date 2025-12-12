@@ -3,6 +3,17 @@
 /* Page scaffold */
 .m-page {
   min-height: 100dvh;
+  width: 100%;
+}
+
+/* Constrain layout to a “phone width” when viewed on desktop */
+@media (min-width: 480px) {
+  body.m-page {
+    max-width: 430px;
+    margin-inline: auto;
+    border-left: 1px solid color-mix(in oklch, var(--da-color-border) 35%, transparent);
+    border-right: 1px solid color-mix(in oklch, var(--da-color-border) 35%, transparent);
+  }
 }
 
 .m-skip-link {
