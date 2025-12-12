@@ -177,11 +177,7 @@
 
 /* Cards */
 .da-card {
-  background: linear-gradient(
-    180deg,
-    color-mix(in oklch, var(--da-color-neutral-900) 85%, transparent),
-    color-mix(in oklch, var(--da-color-black) 100%, transparent)
-  );
+  background: color-mix(in oklch, var(--da-color-surface-2) 70%, var(--da-color-black));
   border: 1px solid color-mix(in oklch, var(--da-color-border) 70%, transparent);
   border-radius: var(--da-radius-2xl);
   padding: var(--da-space-6);
@@ -240,17 +236,7 @@
 
 /* Footer */
 .da-footer {
-  background: radial-gradient(
-      1200px 400px at 30% -10%,
-      color-mix(in oklch, var(--da-color-neutral-700) 35%, transparent),
-      transparent 60%
-    ),
-    linear-gradient(
-      135deg,
-      color-mix(in oklch, var(--da-color-neutral-900) 100%, transparent),
-      var(--da-color-black),
-      color-mix(in oklch, var(--da-color-neutral-800) 100%, transparent)
-    );
+  background: var(--da-color-black);
   border-top: 1px solid color-mix(in oklch, var(--da-color-border) 45%, transparent);
 }
 

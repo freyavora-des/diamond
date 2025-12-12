@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../mobile.css" />
   </head>
   <body class="da-theme m-page">
+    <a class="m-skip-link" href="#main">Skip to content</a>
     <header class="m-header">
       <div class="m-header__row">
         <button
@@ -85,12 +86,13 @@
     </aside>
 
     <section class="m-hero" aria-label="About hero">
-      <div
-        class="m-hero__media"
-        style="
-          background-image: url('https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-19f12d88a0de7f4e0ef2964fc8d9eb1213dc7133/public');
-        "
-      ></div>
+      <img
+        class="m-hero__img"
+        src="https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-19f12d88a0de7f4e0ef2964fc8d9eb1213dc7133/public"
+        alt=""
+        fetchpriority="high"
+        decoding="async"
+      />
       <div class="m-hero__overlay"></div>
       <div class="m-hero__content">
         <p style="margin: 0; font-family: var(--da-font-brand); letter-spacing: var(--da-tracking-wide); text-transform: uppercase; color: var(--da-color-text-subtle); font-size: var(--da-text-sm);">
@@ -104,7 +106,7 @@
       </div>
     </section>
 
-    <main class="m-main">
+    <main id="main" class="m-main">
       <section class="m-feature" id="mission">
         <div class="da-card">
           <h2 class="da-card__title">Our Mission</h2>
