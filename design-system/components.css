@@ -1,0 +1,303 @@
+/* Diamond Atelier Design System — Components (CSS) */
+
+/* Layout */
+.da-container {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: var(--da-space-4);
+}
+
+/* Header / Nav */
+.da-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--da-nav-bg);
+  backdrop-filter: blur(var(--da-blur-nav));
+  box-shadow: var(--da-shadow-sm);
+}
+
+.da-header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--da-space-3);
+}
+
+.da-logo {
+  margin: 0;
+  font-family: var(--da-font-brand);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: var(--da-tracking-logo);
+  font-size: var(--da-text-xl);
+  line-height: var(--da-leading-snug);
+  color: var(--da-color-text);
+}
+
+.da-nav {
+  display: flex;
+  gap: var(--da-space-2);
+  align-items: center;
+}
+
+.da-nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--da-radius-lg);
+  font-family: var(--da-font-brand);
+  font-size: var(--da-text-sm);
+  font-weight: var(--da-font-weight-medium);
+  letter-spacing: var(--da-tracking-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: color-mix(in oklch, var(--da-color-text) 80%, transparent);
+  transition:
+    color var(--da-duration-base) var(--da-ease-standard),
+    transform var(--da-duration-base) var(--da-ease-standard),
+    background var(--da-duration-base) var(--da-ease-standard);
+}
+
+.da-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.375rem;
+  transform: translateX(-50%);
+  height: 0.25rem;
+  width: 0;
+  opacity: 0;
+  background: var(--da-color-text);
+  border-radius: var(--da-radius-full);
+  transition:
+    width var(--da-duration-slow) var(--da-ease-standard),
+    opacity var(--da-duration-base) var(--da-ease-standard);
+}
+
+.da-nav-link:hover {
+  color: var(--da-color-text);
+}
+
+.da-nav-link:hover::after {
+  width: 75%;
+  opacity: 1;
+}
+
+.da-nav-link--active {
+  color: var(--da-color-text);
+  font-weight: var(--da-font-weight-semibold);
+}
+
+.da-nav-link--active::after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* Buttons */
+.da-button {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: var(--da-radius-lg);
+  padding: 0.75rem 1rem;
+  font-family: var(--da-font-brand);
+  font-size: var(--da-text-sm);
+  font-weight: var(--da-font-weight-medium);
+  letter-spacing: var(--da-tracking-wide);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    transform var(--da-duration-base) var(--da-ease-standard),
+    box-shadow var(--da-duration-base) var(--da-ease-standard),
+    background var(--da-duration-base) var(--da-ease-standard),
+    color var(--da-duration-base) var(--da-ease-standard),
+    border-color var(--da-duration-base) var(--da-ease-standard);
+}
+
+.da-button:focus-visible {
+  outline: none;
+  box-shadow: var(--da-shadow-glow);
+}
+
+.da-button:active {
+  transform: translateY(1px);
+}
+
+.da-button--primary {
+  background: var(--da-color-white);
+  color: var(--da-color-black);
+}
+
+.da-button--primary:hover {
+  box-shadow: var(--da-shadow-md);
+  transform: translateY(-1px);
+}
+
+.da-button--secondary {
+  background: transparent;
+  border-color: color-mix(in oklch, var(--da-color-text) 20%, transparent);
+  color: var(--da-color-text);
+}
+
+.da-button--secondary:hover {
+  border-color: color-mix(in oklch, var(--da-color-text) 40%, transparent);
+  background: color-mix(in oklch, var(--da-color-text) 8%, transparent);
+}
+
+.da-icon-button {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: var(--da-radius-full);
+  background: var(--da-color-surface-2);
+  border: 1px solid color-mix(in oklch, var(--da-color-border) 70%, transparent);
+  color: var(--da-color-text);
+  cursor: pointer;
+  transition:
+    transform var(--da-duration-base) var(--da-ease-standard),
+    background var(--da-duration-base) var(--da-ease-standard),
+    border-color var(--da-duration-base) var(--da-ease-standard);
+}
+
+.da-icon-button:hover {
+  transform: translateY(-1px) scale(1.03);
+  background: color-mix(in oklch, var(--da-color-text) 10%, var(--da-color-surface-2));
+  border-color: color-mix(in oklch, var(--da-color-text) 25%, var(--da-color-border));
+}
+
+.da-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+}
+
+/* Cards */
+.da-card {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklch, var(--da-color-neutral-900) 85%, transparent),
+    color-mix(in oklch, var(--da-color-black) 100%, transparent)
+  );
+  border: 1px solid color-mix(in oklch, var(--da-color-border) 70%, transparent);
+  border-radius: var(--da-radius-2xl);
+  padding: var(--da-space-6);
+  box-shadow: var(--da-shadow-sm);
+}
+
+.da-card__title {
+  margin: 0 0 var(--da-space-2) 0;
+  font-family: var(--da-font-brand);
+  font-size: var(--da-text-lg);
+  font-weight: var(--da-font-weight-medium);
+  letter-spacing: var(--da-tracking-wide);
+  text-transform: uppercase;
+}
+
+.da-card__body {
+  margin: 0;
+  color: var(--da-color-text-muted);
+  line-height: var(--da-leading-relaxed);
+  font-size: var(--da-text-base);
+}
+
+/* Form controls */
+.da-label {
+  display: block;
+  margin-bottom: var(--da-space-2);
+  font-family: var(--da-font-brand);
+  font-size: var(--da-text-sm);
+  letter-spacing: var(--da-tracking-wide);
+  text-transform: uppercase;
+  color: var(--da-color-text-subtle);
+}
+
+.da-input {
+  width: 100%;
+  border-radius: var(--da-radius-lg);
+  border: 1px solid color-mix(in oklch, var(--da-color-border) 80%, transparent);
+  background: color-mix(in oklch, var(--da-color-surface-2) 65%, var(--da-color-black));
+  color: var(--da-color-text);
+  padding: 0.75rem 0.875rem;
+  font-size: var(--da-text-base);
+  transition:
+    border-color var(--da-duration-base) var(--da-ease-standard),
+    box-shadow var(--da-duration-base) var(--da-ease-standard);
+}
+
+.da-input::placeholder {
+  color: color-mix(in oklch, var(--da-color-text) 45%, transparent);
+}
+
+.da-input:focus-visible {
+  outline: none;
+  border-color: color-mix(in oklch, var(--da-color-text) 35%, transparent);
+  box-shadow: var(--da-shadow-glow);
+}
+
+/* Footer */
+.da-footer {
+  background: radial-gradient(
+      1200px 400px at 30% -10%,
+      color-mix(in oklch, var(--da-color-neutral-700) 35%, transparent),
+      transparent 60%
+    ),
+    linear-gradient(
+      135deg,
+      color-mix(in oklch, var(--da-color-neutral-900) 100%, transparent),
+      var(--da-color-black),
+      color-mix(in oklch, var(--da-color-neutral-800) 100%, transparent)
+    );
+  border-top: 1px solid color-mix(in oklch, var(--da-color-border) 45%, transparent);
+}
+
+.da-footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--da-space-8);
+  padding-block: var(--da-space-16);
+}
+
+@media (min-width: 64rem) {
+  .da-footer__grid {
+    grid-template-columns: 1.25fr 1fr 1.25fr 1fr;
+  }
+}
+
+.da-footer__brand {
+  font-family: var(--da-font-display);
+  letter-spacing: var(--da-tracking-logo);
+  font-weight: var(--da-font-weight-regular);
+  margin: 0 0 var(--da-space-4) 0;
+}
+
+.da-muted {
+  color: var(--da-color-text-muted);
+}
+
+.da-footer__links a {
+  color: var(--da-color-text-muted);
+  text-decoration: none;
+}
+
+.da-footer__links a:hover {
+  color: var(--da-color-text);
+  text-decoration: underline;
+}
+
+/* Utility bits used by style guide */
+.da-stack {
+  display: grid;
+  gap: var(--da-space-4);
+}
+
+.da-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--da-space-3);
+  align-items: center;
+}
+

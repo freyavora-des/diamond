@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diamond Atelier — Design System</title>
+    <link rel="stylesheet" href="./tokens.css" />
+    <link rel="stylesheet" href="./components.css" />
+    <style>
+      /* Style guide page layout (not part of the DS API) */
+      body {
+        margin: 0;
+      }
+      main {
+        padding-block: var(--da-space-12);
+      }
+      h2 {
+        margin: 0 0 var(--da-space-4) 0;
+        font-family: var(--da-font-brand);
+        font-weight: var(--da-font-weight-medium);
+        letter-spacing: var(--da-tracking-wide);
+        text-transform: uppercase;
+        font-size: var(--da-text-lg);
+      }
+      .sg-section {
+        padding-block: var(--da-space-8);
+        border-top: 1px solid color-mix(in oklch, var(--da-color-border) 45%, transparent);
+      }
+      .sg-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--da-space-6);
+      }
+      @media (min-width: 56rem) {
+        .sg-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .sg-swatch-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--da-space-3);
+      }
+      @media (min-width: 40rem) {
+        .sg-swatch-grid {
+          grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+      }
+      .sg-swatch {
+        border-radius: var(--da-radius-xl);
+        border: 1px solid color-mix(in oklch, var(--da-color-border) 55%, transparent);
+        overflow: hidden;
+        box-shadow: var(--da-shadow-sm);
+      }
+      .sg-swatch__chip {
+        height: 3.25rem;
+        background: var(--chip);
+      }
+      .sg-swatch__meta {
+        padding: var(--da-space-2) var(--da-space-3);
+        font-family: var(--da-font-mono);
+        font-size: 0.75rem;
+        line-height: 1.2;
+        color: var(--da-color-text-muted);
+      }
+      .sg-typography-sample {
+        border-radius: var(--da-radius-2xl);
+        border: 1px solid color-mix(in oklch, var(--da-color-border) 55%, transparent);
+        padding: var(--da-space-6);
+        background: color-mix(in oklch, var(--da-color-surface-2) 55%, var(--da-color-black));
+      }
+      .sg-typography-sample p {
+        margin: 0;
+      }
+      .sg-code {
+        font-family: var(--da-font-mono);
+        font-size: 0.8125rem;
+        color: var(--da-color-text-muted);
+      }
+    </style>
+  </head>
+  <body class="da-theme">
+    <header class="da-header">
+      <div class="da-container">
+        <div class="da-header__row">
+          <h1 class="da-logo">DIAMOND ATELIER</h1>
+          <nav class="da-nav" aria-label="Primary">
+            <a class="da-nav-link" href="#tokens">Tokens</a>
+            <a class="da-nav-link da-nav-link--active" href="#components">Components</a>
+            <a class="da-nav-link" href="#patterns">Patterns</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="da-container">
+        <section id="tokens" class="sg-section">
+          <h2>Tokens</h2>
+
+          <div class="sg-grid">
+            <div class="da-stack">
+              <div class="da-card">
+                <h3 class="da-card__title">Semantic colors</h3>
+                <p class="da-card__body">
+                  These are the recommended UI roles used throughout the web site’s dark
+                  interface.
+                </p>
+                <div class="sg-swatch-grid" style="margin-top: var(--da-space-6)">
+                  <div class="sg-swatch" style="--chip: var(--da-color-bg)">
+                    <div class="sg-swatch__chip"></div>
+                    <div class="sg-swatch__meta">background<br /><span class="sg-code">--da-color-bg</span></div>
+                  </div>
+                  <div class="sg-swatch" style="--chip: var(--da-color-surface-1)">
+                    <div class="sg-swatch__chip"></div>
+                    <div class="sg-swatch__meta">surface 1<br /><span class="sg-code">--da-color-surface-1</span></div>
+                  </div>
+                  <div class="sg-swatch" style="--chip: var(--da-color-surface-2)">
+                    <div class="sg-swatch__chip"></div>
+                    <div class="sg-swatch__meta">surface 2<br /><span class="sg-code">--da-color-surface-2</span></div>
+                  </div>
+                  <div class="sg-swatch" style="--chip: var(--da-color-border)">
+                    <div class="sg-swatch__chip"></div>
+                    <div class="sg-swatch__meta">border<br /><span class="sg-code">--da-color-border</span></div>
+                  </div>
+                  <div class="sg-swatch" style="--chip: var(--da-color-text)">
+                    <div class="sg-swatch__chip"></div>
+                    <div class="sg-swatch__meta">text<br /><span class="sg-code">--da-color-text</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="da-stack">
+              <div class="da-card">
+                <h3 class="da-card__title">Neutral scale</h3>
+                <p class="da-card__body">
+                  Neutral colors are based on the Tailwind v4 gray scale used in the web
+                  build.
+                </p>
+                <div class="sg-swatch-grid" style="margin-top: var(--da-space-6)">
+                  <div class="sg-swatch" style="--chip: var(--da-color-neutral-300)">
+                    <div class="sg-swatch__chip"></div>
+                    <div class="sg-swatch__meta">300<br /><span class="sg-code">--da-color-neutral-300</span></div>
+                  </div>
+                  <div class="sg-swatch" style="--chip: var(--da-color-neutral-400)">
+                    <div class="sg-swatch__chip"></div>
+                    <div class="sg-swatch__meta">400<br /><span class="sg-code">--da-color-neutral-400</span></div>
+                  </div>
+                  <div class="sg-swatch" style="--chip: var(--da-color-neutral-600)">
+                    <div class="sg-swatch__chip"></div>
+                    <div class="sg-swatch__meta">600<br /><span class="sg-code">--da-color-neutral-600</span></div>
+                  </div>
+                  <div class="sg-swatch" style="--chip: var(--da-color-neutral-800)">
+                    <div class="sg-swatch__chip"></div>
+                    <div class="sg-swatch__meta">800<br /><span class="sg-code">--da-color-neutral-800</span></div>
+                  </div>
+                  <div class="sg-swatch" style="--chip: var(--da-color-neutral-900)">
+                    <div class="sg-swatch__chip"></div>
+                    <div class="sg-swatch__meta">900<br /><span class="sg-code">--da-color-neutral-900</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sg-grid" style="margin-top: var(--da-space-8)">
+            <div class="sg-typography-sample">
+              <p class="sg-code">Brand / navigation</p>
+              <p style="font-family: var(--da-font-brand); letter-spacing: var(--da-tracking-wide); text-transform: uppercase; margin-top: var(--da-space-2);">
+                Inventory · Shapes · Education · Contact
+              </p>
+              <p class="sg-code" style="margin-top: var(--da-space-4)">
+                <span>font-family:</span> <span class="da-muted">--da-font-brand</span>
+              </p>
+            </div>
+            <div class="sg-typography-sample">
+              <p class="sg-code">Display / editorial</p>
+              <p style="font-family: var(--da-font-display); font-size: var(--da-text-3xl); line-height: var(--da-leading-tight); margin-top: var(--da-space-2);">
+                Crafted with precision and elegance.
+              </p>
+              <p class="sg-code" style="margin-top: var(--da-space-4)">
+                <span>font-family:</span> <span class="da-muted">--da-font-display</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="components" class="sg-section">
+          <h2>Components</h2>
+
+          <div class="sg-grid">
+            <div class="da-card">
+              <h3 class="da-card__title">Buttons</h3>
+              <p class="da-card__body">Primary and secondary actions, plus an icon button.</p>
+              <div class="da-row" style="margin-top: var(--da-space-6)">
+                <button class="da-button da-button--primary" type="button">Subscribe</button>
+                <button class="da-button da-button--secondary" type="button">Learn more</button>
+                <button class="da-icon-button" type="button" aria-label="Chat">
+                  <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M21 11.5a8.5 8.5 0 0 1-12.8 7.4L3 20l1.1-4.9A8.5 8.5 0 1 1 21 11.5Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="da-card">
+              <h3 class="da-card__title">Form controls</h3>
+              <p class="da-card__body">
+                Dark-surface input with subtle border and a glow focus ring.
+              </p>
+              <div style="margin-top: var(--da-space-6)">
+                <label class="da-label" for="email">Email</label>
+                <input class="da-input" id="email" type="email" placeholder="Enter your email" />
+                <div class="da-row" style="margin-top: var(--da-space-4)">
+                  <button class="da-button da-button--primary" type="button">Submit</button>
+                  <button class="da-button da-button--secondary" type="button">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sg-grid" style="margin-top: var(--da-space-8)">
+            <div class="da-card">
+              <h3 class="da-card__title">Content card</h3>
+              <p class="da-card__body">
+                A general-purpose card for sections like “Shapes”, “Colors”, “Education”.
+              </p>
+            </div>
+            <div class="da-card">
+              <h3 class="da-card__title">Card with actions</h3>
+              <p class="da-card__body">
+                Use a primary CTA for the main path and a secondary CTA for exploration.
+              </p>
+              <div class="da-row" style="margin-top: var(--da-space-6)">
+                <button class="da-button da-button--primary" type="button">View inventory</button>
+                <button class="da-button da-button--secondary" type="button">Contact</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="patterns" class="sg-section">
+          <h2>Patterns</h2>
+          <div class="da-card">
+            <h3 class="da-card__title">Dark luxury</h3>
+            <p class="da-card__body">
+              The core look is premium and minimal: black background, subtle gray surfaces,
+              high letter-spacing in navigation, and restrained motion (150–500ms).
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="da-footer">
+      <div class="da-container">
+        <div class="da-footer__grid">
+          <div>
+            <h2 class="da-footer__brand">DIAMOND ATELIER</h2>
+            <p class="da-muted" style="margin: 0">
+              Crafting exceptional lab-grown diamonds with precision, sustainability, and
+              uncompromising quality.
+            </p>
+            <div class="da-row" style="margin-top: var(--da-space-4)">
+              <button class="da-icon-button" type="button" aria-label="Facebook">
+                <span aria-hidden="true">f</span>
+              </button>
+              <button class="da-icon-button" type="button" aria-label="Instagram">
+                <span aria-hidden="true">in</span>
+              </button>
+              <button class="da-icon-button" type="button" aria-label="LinkedIn">
+                <span aria-hidden="true">li</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="da-footer__links">
+            <h2>Quick links</h2>
+            <div class="da-stack">
+              <a href="#">Shapes</a>
+              <a href="#">Education</a>
+              <a href="#">About</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
+
+          <div>
+            <h2>Contact</h2>
+            <div class="da-stack da-muted">
+              <div>+1 (646) 753 3092</div>
+              <div>diamondatelierusa@gmail.com</div>
+              <div>38 West 48th Street, 5th Floor, New York, NY 10036</div>
+            </div>
+          </div>
+
+          <div>
+            <h2>Stay updated</h2>
+            <div class="da-stack">
+              <input class="da-input" type="email" placeholder="Enter your email" />
+              <button class="da-button da-button--primary" type="button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            padding-block: var(--da-space-6);
+            border-top: 1px solid color-mix(in oklch, var(--da-color-border) 45%, transparent);
+            text-align: center;
+            color: color-mix(in oklch, var(--da-color-text) 55%, transparent);
+            font-size: var(--da-text-sm);
+          "
+        >
+          © 2025 Diamond Atelier. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
