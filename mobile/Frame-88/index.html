@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diamond Atelier — Shop (Mobile)</title>
+    <meta name="description" content="Shop styles — mobile prototype content rendered with the Diamond Atelier design system." />
+
+    <link rel="stylesheet" href="../../design-system/tokens.css" />
+    <link rel="stylesheet" href="../../design-system/components.css" />
+    <link rel="stylesheet" href="../mobile.css" />
+  </head>
+  <body class="da-theme m-page">
+    <header class="m-header">
+      <div class="m-header__row">
+        <button
+          class="da-icon-button"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="mobile-drawer"
+          aria-expanded="false"
+          data-m-drawer-open
+        >
+          <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16v2H4zM4 11h16v2H4zM4 16h16v2H4z" />
+          </svg>
+        </button>
+
+        <h1 class="m-header__brand">Shop</h1>
+
+        <div class="m-header__actions">
+          <a class="da-icon-button" href="../" aria-label="Home">
+            <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a class="da-icon-button" href="../Frame-89/" aria-label="About">
+            <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-7 9a7 7 0 0 1 14 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <aside id="mobile-drawer" class="m-drawer" aria-hidden="true" data-m-drawer>
+      <div class="m-drawer__backdrop" data-m-drawer-backdrop></div>
+      <div class="m-drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="da-row" style="justify-content: space-between">
+          <p class="m-drawer__title">Menu</p>
+          <button class="da-icon-button" type="button" aria-label="Close menu" data-m-drawer-close>
+            <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6 6l12 12M18 6 6 18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <nav class="m-drawer__nav" aria-label="Primary">
+          <a class="m-drawer__link" href="../">Home</a>
+          <a class="m-drawer__link" href="./">Shop</a>
+          <a class="m-drawer__link" href="../Frame-89/">About</a>
+          <a class="m-drawer__link" href="#styles">Shop by style</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="m-main">
+      <section class="m-feature" id="rings">
+        <div>
+          <h2 class="m-section-title">Forest Bloom Ring</h2>
+          <p class="m-lead">Crafted by Nature, Perfected in Sparkle</p>
+        </div>
+
+        <div class="m-media-card">
+          <img
+            class="m-media-card__img"
+            src="https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-bda4d1da13730a9f58cf1409ab850978239e3186/public"
+            alt="Forest Bloom Ring"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="m-media-card__overlay"></div>
+          <div class="m-media-card__content">
+            <h3 class="m-media-card__title">Forest Bloom Ring</h3>
+            <p class="m-media-card__desc">
+              <span style="color: var(--da-color-text)">Price:</span> $1897
+            </p>
+            <div class="m-card-actions">
+              <button class="da-button da-button--primary" type="button">Add to bag</button>
+              <button class="da-button da-button--secondary" type="button">Save</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-feature">
+        <div class="m-media-card">
+          <img
+            class="m-media-card__img"
+            src="https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-a2bd1ec1521c75077260b734e63b1c2c2f0a473d/h=226"
+            alt="Fressia Hidden Halo Diamonds Ring"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="m-media-card__overlay"></div>
+          <div class="m-media-card__content">
+            <h3 class="m-media-card__title">Fressia Hidden Halo Diamonds Ring</h3>
+            <p class="m-media-card__desc">
+              <span style="color: var(--da-color-text)">Price:</span> $1897
+            </p>
+            <div class="m-card-actions">
+              <button class="da-button da-button--primary" type="button">Add to bag</button>
+              <button class="da-button da-button--secondary" type="button">Save</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-feature" id="styles">
+        <div>
+          <h2 class="m-section-title">Shop by Style</h2>
+          <p class="m-lead">
+            Discover what defines your sparkle. From everyday elegance to statement luxury—shop the
+            pieces made for you.
+          </p>
+        </div>
+
+        <div class="m-grid-2">
+          <div class="da-card" style="padding: var(--da-space-4)">
+            <p class="da-card__title" style="margin: 0">Toi Moi</p>
+            <p class="da-card__body" style="margin-top: var(--da-space-2)">Crafted with precision</p>
+          </div>
+          <div class="da-card" style="padding: var(--da-space-4)">
+            <p class="da-card__title" style="margin: 0">Bezel</p>
+            <p class="da-card__body" style="margin-top: var(--da-space-2)">Crafted with precision</p>
+          </div>
+          <div class="da-card" style="padding: var(--da-space-4)">
+            <p class="da-card__title" style="margin: 0">Halo</p>
+            <p class="da-card__body" style="margin-top: var(--da-space-2)">Crafted with precision</p>
+          </div>
+          <div class="da-card" style="padding: var(--da-space-4)">
+            <p class="da-card__title" style="margin: 0">More</p>
+            <p class="da-card__body" style="margin-top: var(--da-space-2)">Browse the catalog</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-feature" id="bracelet">
+        <div>
+          <h2 class="m-section-title">Bracelet</h2>
+          <p class="m-lead">Prototype category anchor.</p>
+        </div>
+      </section>
+
+      <section class="m-feature" id="earrings">
+        <div>
+          <h2 class="m-section-title">Earrings</h2>
+          <p class="m-lead">Prototype category anchor.</p>
+        </div>
+      </section>
+
+      <section class="m-feature" id="necklace">
+        <div>
+          <h2 class="m-section-title">Necklace</h2>
+          <p class="m-lead">Prototype category anchor.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="m-footer">
+      <div class="m-footer__grid">
+        <div>
+          <h3>Latest from Diamond Forest</h3>
+          <div class="da-row">
+            <a class="da-button da-button--secondary" href="../">Home</a>
+            <a class="da-button da-button--secondary" href="../Frame-89/">About</a>
+          </div>
+        </div>
+        <div class="m-footer__fineprint">© 2025 Diamond Atelier. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="../_shared.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diamond Atelier — Mobile</title>
+    <meta name="description" content="Mobile experience built from the Diamond Atelier design system." />
+
+    <link rel="stylesheet" href="../design-system/tokens.css" />
+    <link rel="stylesheet" href="../design-system/components.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+  </head>
+  <body class="da-theme m-page">
+    <div class="m-announcement">
+      <div class="m-announcement__inner">Crafted by Nature, Perfected in Sparkle</div>
+    </div>
+
+    <header class="m-header">
+      <div class="m-header__row">
+        <button
+          class="da-icon-button"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="mobile-drawer"
+          aria-expanded="false"
+          data-m-drawer-open
+        >
+          <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16v2H4zM4 11h16v2H4zM4 16h16v2H4z" />
+          </svg>
+        </button>
+
+        <h1 class="m-header__brand">DIAMOND ATELIER</h1>
+
+        <div class="m-header__actions">
+          <a class="da-icon-button" href="./Frame-88/" aria-label="Shop">
+            <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6 7h15l-2 9H7L6 7Zm0 0-1-3H2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a class="da-icon-button" href="./Frame-89/" aria-label="About">
+            <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-7 9a7 7 0 0 1 14 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <aside id="mobile-drawer" class="m-drawer" aria-hidden="true" data-m-drawer>
+      <div class="m-drawer__backdrop" data-m-drawer-backdrop></div>
+      <div class="m-drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="da-row" style="justify-content: space-between">
+          <p class="m-drawer__title">Menu</p>
+          <button class="da-icon-button" type="button" aria-label="Close menu" data-m-drawer-close>
+            <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6 6l12 12M18 6 6 18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <nav class="m-drawer__nav" aria-label="Primary">
+          <a class="m-drawer__link" href="./">Home</a>
+          <a class="m-drawer__link" href="./Frame-88/">Shop</a>
+          <a class="m-drawer__link" href="./Frame-89/">About</a>
+          <a class="m-drawer__link" href="#categories">Shop by category</a>
+        </nav>
+
+        <div class="da-card">
+          <h2 class="da-card__title">Where Nature Meets Brilliance</h2>
+          <p class="da-card__body">
+            Inspired by the beauty of nature, we craft fine jewelry that blends organic elegance with
+            timeless sparkle. Every piece tells a story of purity and passion.
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <section class="m-hero" aria-label="Hero">
+      <div
+        class="m-hero__media"
+        style="
+          background-image: url('https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-914a8ff09a403dbfae409f0b25007e11a4e659db/public');
+        "
+      ></div>
+      <div class="m-hero__overlay"></div>
+      <div class="m-hero__content">
+        <p style="margin: 0; font-family: var(--da-font-brand); letter-spacing: var(--da-tracking-wide); text-transform: uppercase; color: var(--da-color-text-subtle); font-size: var(--da-text-sm);">
+          Diamond Forest (Prototype content)
+        </p>
+        <h2 class="m-hero__title">Diamond Forest</h2>
+        <p class="m-hero__tagline">Crafted by Nature, Perfected in Sparkle</p>
+        <div class="m-card-actions">
+          <a class="da-button da-button--primary" href="./Frame-88/">Shop now</a>
+          <a class="da-button da-button--secondary" href="./Frame-89/">Our story</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="m-main">
+      <section class="m-feature">
+        <div>
+          <h2 class="m-section-title">Where Nature Meets Brilliance</h2>
+          <p class="m-lead">
+            Inspired by the beauty of nature, we craft fine jewelry that blends organic elegance with
+            timeless sparkle. Every piece tells a story of purity and passion.
+          </p>
+        </div>
+      </section>
+
+      <section class="m-feature">
+        <div class="m-media-card">
+          <img
+            class="m-media-card__img"
+            src="https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-2d7181d24fb936a31011771823db630dd9f15ea9/public"
+            alt="Radiance in Two Hues"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="m-media-card__overlay"></div>
+          <div class="m-media-card__content">
+            <h3 class="m-media-card__title">Radiance in Two Hues</h3>
+            <p class="m-media-card__desc">
+              A harmonious dance of sunshine yellow and pure white brilliance. These dual-tone pear
+              shaped diamonds.
+            </p>
+            <div class="m-card-actions">
+              <a class="da-button da-button--primary" href="./Frame-88/">Shop now</a>
+              <a class="da-button da-button--secondary" href="#categories">Explore</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-feature">
+        <div class="m-media-card">
+          <img
+            class="m-media-card__img"
+            src="https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-dab65b61f21c9bf5beb241cb882fbc95e1fc9630/w=750"
+            alt="New Elegant Collection"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="m-media-card__overlay"></div>
+          <div class="m-media-card__content">
+            <h3 class="m-media-card__title">New Elegant Collection</h3>
+            <p class="m-media-card__desc">
+              Discover the charm of modern elegance. Our latest collection blends timeless design
+              with a touch of contemporary flair—made to elevate your everyday sparkle.
+            </p>
+            <div class="m-card-actions">
+              <a class="da-button da-button--primary" href="./Frame-88/">Shop now</a>
+              <a class="da-button da-button--secondary" href="./Frame-89/">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-feature">
+        <div class="da-card">
+          <h3 class="da-card__title">Signature Rings Collection</h3>
+          <p class="da-card__body">
+            Crafted with precision, designed for today’s style icons. Choose your signature shine
+            in Rose Gold, White Gold, or Yellow Gold—each ring a story of love, light, and luxury.
+          </p>
+          <div class="m-card-actions">
+            <a class="da-button da-button--primary" href="./Frame-88/">Shop rings</a>
+            <a class="da-button da-button--secondary" href="./Frame-89/">About</a>
+          </div>
+        </div>
+
+        <div class="m-grid-2">
+          <div class="da-card" style="padding: var(--da-space-4)">
+            <p class="da-card__title" style="margin: 0">Rose Gold</p>
+            <p class="da-card__body" style="margin-top: var(--da-space-2)">Crafted with precision</p>
+          </div>
+          <div class="da-card" style="padding: var(--da-space-4)">
+            <p class="da-card__title" style="margin: 0">White Gold</p>
+            <p class="da-card__body" style="margin-top: var(--da-space-2)">Crafted with precision</p>
+          </div>
+          <div class="da-card" style="padding: var(--da-space-4)">
+            <p class="da-card__title" style="margin: 0">Yellow Gold</p>
+            <p class="da-card__body" style="margin-top: var(--da-space-2)">Crafted with precision</p>
+          </div>
+          <div class="da-card" style="padding: var(--da-space-4)">
+            <p class="da-card__title" style="margin: 0">Shop Now</p>
+            <p class="da-card__body" style="margin-top: var(--da-space-2)">See styles in Frame-88</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="m-feature">
+        <div>
+          <h2 class="m-section-title">Shop by Category</h2>
+          <p class="m-lead">
+            Discover what defines your sparkle. From everyday elegance to statement luxury—shop the
+            pieces made for you.
+          </p>
+        </div>
+
+        <div class="m-grid-2">
+          <a class="m-tile" href="./Frame-88/#rings">
+            <img
+              class="m-tile__img"
+              src="https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-137caed95208f5ff9a2fc6c09938472bea7d7050/public"
+              alt="Rings"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="m-tile__label">Rings</span>
+          </a>
+          <a class="m-tile" href="./Frame-88/#bracelet">
+            <img
+              class="m-tile__img"
+              src="https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-c69aad395a0afb856c24b992bdc744e8159183ec/public"
+              alt="Bracelet"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="m-tile__label">Bracelet</span>
+          </a>
+          <a class="m-tile" href="./Frame-88/#earrings">
+            <img
+              class="m-tile__img"
+              src="https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-9e10b2a1424bdeb24cb0d7aa05c1a706eb13a88c/w=290"
+              alt="Earrings"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="m-tile__label">Earrings</span>
+          </a>
+          <a class="m-tile" href="./Frame-88/#necklace">
+            <img
+              class="m-tile__img"
+              src="https://petronille-tfdthazqzu.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/petronille-tfdthazqzu.figweb.site-bdc75061667d734fba377c01fac4a4dfdbe1a88c/public"
+              alt="Necklace"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="m-tile__label">Necklace</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="m-footer">
+      <div class="m-footer__grid">
+        <div>
+          <h3>Latest from Diamond Forest</h3>
+          <div class="da-row">
+            <a class="da-button da-button--secondary" href="./Frame-88/">Shop</a>
+            <a class="da-button da-button--secondary" href="./Frame-89/">About</a>
+          </div>
+        </div>
+
+        <div class="m-footer__columns">
+          <div>
+            <h3>Support</h3>
+            <div class="da-stack">
+              <a href="#">Track Your Order</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Shipping &amp; Return Policy</a>
+              <a href="#">Frequently Asked Questions</a>
+            </div>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <div class="da-stack">
+              <a href="#">Request Repair</a>
+              <a href="#">Personalization</a>
+              <a href="#">Business Accounts</a>
+            </div>
+          </div>
+          <div>
+            <h3>About</h3>
+            <div class="da-stack">
+              <a href="./Frame-89/">Our Story</a>
+              <a href="#">Sustainability</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <div class="da-stack">
+              <a href="mailto:hello@diamondatelier.in">hello@diamondatelier.in</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms &amp; Conditions</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-footer__fineprint">© 2025 Diamond Atelier. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="./_shared.js"></script>
+  </body>
+</html>
+
