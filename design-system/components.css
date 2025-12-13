@@ -109,6 +109,7 @@
   letter-spacing: var(--da-tracking-wide);
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
   transition:
     transform var(--da-duration-base) var(--da-ease-standard),
     box-shadow var(--da-duration-base) var(--da-ease-standard),
