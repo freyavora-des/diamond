@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "brand": "Diamond Forest",
+    "eyebrow": "Lab grown Diamond Elegance",
+    "title": "Diamond Forest",
+    "tagline": "Crafted by Nature, Perfected in Sparkle"
+  },
+  "sections": {
+    "whereNatureMeetsBrilliance": {
+      "title": "Where Nature Meets Brilliance",
+      "body": "Inspired by the beauty of nature, we craft fine jeweler that blends organic elegance with timeless sparkle.\n Every piece tells a story of purity, passion."
+    },
+    "newElegantCollection": {
+      "title": "New Elegant Collection",
+      "body": "Discover the charm of modern elegance.\n Our latest collection blends timeless design with a touch of contemporary flair  made to elevate your everyday sparkle."
+    },
+    "signatureRingsCollection": {
+      "title": "Signature Rings Collection",
+      "body": "Crafted with precision, designed for today’s style icons.\n Choose your signature shine in Rose Gold, White Gold, or Yellow Gold  each ring a story of love, light, and luxury."
+    },
+    "shopByCategory": {
+      "title": "Shop by Category",
+      "body": "Discover what defines your sparkle.\n From everyday elegance to statement luxury \n shop the pieces made for you"
+    }
+  },
+  "products": [
+    {
+      "slug": "forest-bloom-ring",
+      "name": "Forest Bloom Ring",
+      "price": "$1897",
+      "category": "Rings"
+    },
+    {
+      "slug": "fressia-hidden-halo-diamonds-ring",
+      "name": "Fressia Hidden Halo Diamonds Ring",
+      "price": "$1897",
+      "category": "Rings"
+    }
+  ],
+  "categories": [
+    "Rings",
+    "Earrings",
+    "Bracelet",
+    "Necklace"
+  ],
+  "footer": {
+    "heading": "Latest from Diamond Forest",
+    "columns": {
+      "support": [
+        "Track Your Order",
+        "Contact Us",
+        "Book an Appointment",
+        "Frequently Asked Questions",
+        "Shipping & Return Policy",
+        "Store Information",
+        "Store List",
+        "Gift Card"
+      ],
+      "services": [
+        "Request Repair",
+        "Personalization",
+        "Business Accounts"
+      ],
+      "about": [
+        "Sustainability",
+        "Co Foundation",
+        "Careers"
+      ],
+      "legal": [
+        "Privacy Policy",
+        "Terms & Conditions"
+      ],
+      "email": "EMAIL"
+    }
+  },
+  "about": {
+    "title": "About the Diamond Forest Jewelers",
+    "missionTitle": "Our Mission",
+    "missionBody": "At Diamond Forest, our mission is to craft timeless jewelry that celebrates nature’s beauty and human emotion. We blend artistry, authenticity, and innovation to create designs that shine with elegance and meaning. Every piece is thoughtfully made to reflect strength, grace,",
+    "storyTitle": "Our Story",
+    "storyIntro": "At Diamond Forest, we believe jewelry is more than an accessory — it’s a reflection of who you are and what you cherish most.",
+    "differentlyTitle": "We Do Things Differently",
+    "differentlyBody": "At Diamond Forest, we believe true beauty lies in the details. From ethically sourced diamonds to hand-finished craftsmanship, every creation reflects our passion for authenticity and innovation.\n\nWe don’t just follow trends — we create timeless elegance inspired by nature’s artistry. Each design is a balance of modern sophistication and soulful storytelling, made to stand out and stay forever.\n\nBecause at Diamond Forest, we don’t just make jewelry — we craft emotions, one sparkle at a time."
+  }
+}

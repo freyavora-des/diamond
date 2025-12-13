@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diamond Atelier — About (Mobile)</title>
+    <meta name="description" content="About page — mobile prototype content rendered with the Diamond Atelier design system." />
+
+    <link rel="stylesheet" href="../../design-system/tokens.css" />
+    <link rel="stylesheet" href="../../design-system/components.css" />
+    <link rel="stylesheet" href="../mobile.css" />
+  </head>
+  <body class="da-theme m-page">
+    <a class="m-skip-link" href="#main">Skip to content</a>
+    <header class="m-header">
+      <div class="m-header__row">
+        <button
+          class="da-icon-button"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="mobile-drawer"
+          aria-expanded="false"
+          data-m-drawer-open
+        >
+          <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M5 7h14M5 12h14M5 17h14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+
+        <h1 class="m-header__brand">About</h1>
+
+        <div class="m-header__actions">
+          <a class="da-icon-button" href="../" aria-label="Home">
+            <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a class="da-icon-button" href="../Frame-88/" aria-label="Shop">
+            <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6 7h15l-2 9H7L6 7Zm0 0-1-3H2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <aside id="mobile-drawer" class="m-drawer" aria-hidden="true" data-m-drawer>
+      <div class="m-drawer__backdrop" data-m-drawer-backdrop></div>
+      <div class="m-drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="da-row" style="justify-content: space-between">
+          <p class="m-drawer__title">Menu</p>
+          <button class="da-icon-button" type="button" aria-label="Close menu" data-m-drawer-close>
+            <svg class="da-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6 6l12 12M18 6 6 18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <nav class="m-drawer__nav" aria-label="Primary">
+          <a class="m-drawer__link" href="../">Home <span class="m-drawer__chev" aria-hidden="true">›</span></a>
+          <a class="m-drawer__link" href="../Frame-88/">Shop <span class="m-drawer__chev" aria-hidden="true">›</span></a>
+          <a class="m-drawer__link" href="./" aria-current="page">About <span class="m-drawer__chev" aria-hidden="true">›</span></a>
+          <a class="m-drawer__link" href="#mission">Our mission <span class="m-drawer__chev" aria-hidden="true">›</span></a>
+          <a class="m-drawer__link" href="#story">Our story <span class="m-drawer__chev" aria-hidden="true">›</span></a>
+        </nav>
+      </div>
+    </aside>
+
+    <section class="m-hero" aria-label="About hero">
+      <img
+        class="m-hero__img"
+        src="../assets/img/img-bc6c88ab4d9e.webp"
+        alt=""
+        fetchpriority="high"
+        decoding="async"
+      />
+      <div class="m-hero__overlay"></div>
+      <div class="m-hero__content">
+        <p style="margin: 0; font-family: var(--da-font-brand); letter-spacing: var(--da-tracking-wide); text-transform: uppercase; color: var(--da-color-text-subtle); font-size: var(--da-text-sm);">
+          About the Diamond Forest Jewelers (Prototype content)
+        </p>
+        <h2 class="m-hero__title">Our Story</h2>
+        <p class="m-hero__tagline">
+          At Diamond Forest, we believe jewelry is more than an accessory — it’s a reflection of who
+          you are and what you cherish most.
+        </p>
+      </div>
+    </section>
+
+    <main id="main" class="m-main">
+      <section class="m-feature" id="mission">
+        <div class="da-card">
+          <h2 class="da-card__title">Our Mission</h2>
+          <p class="da-card__body">
+            At Diamond Forest, our mission is to craft timeless jewelry that celebrates nature’s
+            beauty and human emotion. We blend artistry, authenticity, and innovation to create
+            designs that shine with elegance and meaning. Every piece is thoughtfully made to
+            reflect strength and grace.
+          </p>
+        </div>
+      </section>
+
+      <section class="m-feature" id="story">
+        <div class="da-card">
+          <h2 class="da-card__title">We Do Things Differently</h2>
+          <p class="da-card__body">
+            At Diamond Forest, we believe true beauty lies in the details. From ethically sourced
+            diamonds to hand-finished craftsmanship, every creation reflects our passion for
+            authenticity and innovation.
+            <br /><br />
+            We don’t just follow trends — we create timeless elegance inspired by nature’s artistry.
+            Each design is a balance of modern sophistication and soulful storytelling, made to
+            stand out and stay forever.
+            <br /><br />
+            Because at Diamond Forest, we don’t just make jewelry — we craft emotions, one sparkle
+            at a time.
+          </p>
+          <div class="m-card-actions">
+            <a class="da-button da-button--primary" href="../Frame-88/">Shop now</a>
+            <a class="da-button da-button--secondary" href="../">Back to home</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="m-footer">
+      <div class="m-footer__grid">
+        <div>
+          <h3>Latest from Diamond Forest</h3>
+          <div class="da-row">
+            <a class="da-button da-button--secondary" href="../">Home</a>
+            <a class="da-button da-button--secondary" href="../Frame-88/">Shop</a>
+          </div>
+        </div>
+        <div class="m-footer__fineprint">© 2025 Diamond Atelier. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="../_shared.js"></script>
+  </body>
+</html>
+
